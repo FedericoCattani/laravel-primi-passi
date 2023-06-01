@@ -23,15 +23,15 @@ Route::get('/', function () {
 });
 
 
-Route::get('/', function() {
+Route::get('/header', function() {
 
-    $nav = [
+    $navigations = [
         'contacts' => 'Chi siamo',
         'home' => 'Home',
         'menu' => 'Menu',
     ];
 
 
-    return view('header', compact('nav'));
+    return view('header', compact('navigations'));
 });
 

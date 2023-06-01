@@ -10,9 +10,9 @@
     <nav>
         <ul>
 
-            @foreach ($nav as $nav )
+            @foreach ($navigations as $navigation )
                 <li>
-                    <a href="">{{$nav}}</a>
+                    <a href="">{{$navigation}}</a>
                 </li>
             @endforeach
         </ul>

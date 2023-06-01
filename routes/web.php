@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('hello');
+
+    $string = 'Ciao sono';
+    $name = 'Federico';
+    $paragraf = 'e sono alle prime armi con Laravel!';
+
+    return view('hello', compact('string', 'name', 'paragraf'));
 });
+

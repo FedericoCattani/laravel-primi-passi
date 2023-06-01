@@ -22,3 +22,16 @@ Route::get('/', function () {
     return view('hello', compact('string', 'name', 'paragraf'));
 });
 
+
+Route::get('/', function() {
+
+    $nav = [
+        'contacts' => 'Chi siamo',
+        'home' => 'Home',
+        'menu' => 'Menu',
+    ];
+
+
+    return view('header', compact('nav'));
+});
+
